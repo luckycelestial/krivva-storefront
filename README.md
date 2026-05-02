@@ -1,3 +1,3 @@
-# Chak Clothings
+# Krivva by Rethika
 
-A fresh start for the Chak Clothings project.
+A fresh start for the Krivva by Rethika.
