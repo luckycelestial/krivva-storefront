@@ -104,7 +104,7 @@ export default function Home() {
           border: '2px solid var(--gold-luxury)'
         }}>
           <video 
-            src="/Video-160.mp4" 
+            src="/assets/Video-160.mp4" 
             autoPlay 
             muted 
             loop 

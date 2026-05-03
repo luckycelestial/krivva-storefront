@@ -7,146 +7,98 @@ import Image from "next/image";
 const products = [
   {
     id: 1,
-    name: "Classic Black T-Shirt",
-    category: "T-Shirts",
+    name: "Product 1",
+    category: "Category 1",
     price: "₹1,299",
-    image: "/products/product-1.jpeg",
+    image: "/assets/arrival-1.jpg",
     isPremium: true
   },
   {
     id: 2,
-    name: "Royal White Shirt",
-    category: "Shirts",
+    name: "Product 2",
+    category: "Category 2",
     price: "₹2,499",
-    image: "/products/product-2.jpeg",
+    image: "/assets/arrival-2.jpg",
     isPremium: true
   },
   {
     id: 3,
-    name: "Tiruppur Cotton Tee",
-    category: "T-Shirts",
+    name: "Product 3",
+    category: "Category 1",
     price: "₹1,499",
-    image: "/products/product-3.jpeg",
+    image: "/assets/arrival-3.png",
     isPremium: false
   },
   {
     id: 4,
-    name: "Heritage Linen Shirt",
-    category: "Shirts",
+    name: "Product 4",
+    category: "Category 2",
     price: "₹3,299",
-    image: "/products/product-4.jpeg",
+    image: "/assets/arrival-4.png",
     isPremium: true
   },
   {
     id: 5,
-    name: "Premium Indigo Polo",
-    category: "T-Shirts",
+    name: "Product 5",
+    category: "Category 1",
     price: "₹1,899",
-    image: "/products/product-5.jpeg",
+    image: "/assets/product-extra-1.png",
     isPremium: false
   },
   {
     id: 6,
-    name: "Signature Gold Edition",
-    category: "Shirts",
+    name: "Product 6",
+    category: "Category 2",
     price: "₹4,499",
-    image: "/products/product-6.jpeg",
-    isPremium: true
-  },
-  {
-    id: 7,
-    name: "Classic Kurta Shirt",
-    category: "Heritage",
-    price: "₹2,899",
-    image: "/products/product-7.jpeg",
-    isPremium: false
-  },
-  {
-    id: 8,
-    name: "Modern Fit Chinos",
-    category: "Pants",
-    price: "₹3,499",
-    image: "/products/product-8.jpeg",
-    isPremium: false
-  },
-  {
-    id: 9,
-    name: "Urban Utility T-Shirt",
-    category: "T-Shirts",
-    price: "₹1,299",
-    image: "/products/product-9.jpeg",
-    isPremium: false
-  },
-  {
-    id: 10,
-    name: "Luxury Silk Blend Shirt",
-    category: "Premium",
-    price: "₹5,299",
-    image: "/products/product-10.jpeg",
-    isPremium: true
-  },
-  {
-    id: 11,
-    name: "Artisan Crafted Tee",
-    category: "T-Shirts",
-    price: "₹1,599",
-    image: "/products/product-11.jpeg",
-    isPremium: false
-  },
-  {
-    id: 12,
-    name: "Classic White Poplin",
-    category: "Shirts",
-    price: "₹2,199",
-    image: "/assets/shirt.png",
-    isPremium: false
-  },
-  {
-    id: 13,
-    name: "Premium Crew Tee",
-    category: "T-Shirts",
-    price: "₹1,199",
-    image: "/assets/tshirt.png",
-    isPremium: false
-  },
-  {
-    id: 14,
-    name: "Luxury Velvet Tee",
-    category: "T-Shirts",
-    price: "₹1,999",
-    image: "/assets/product-extra-1.png",
-    isPremium: true
-  },
-  {
-    id: 15,
-    name: "Onyx Collection Shirt",
-    category: "Shirts",
-    price: "₹2,799",
     image: "/assets/product-extra-2.png",
     isPremium: true
   },
   {
-    id: 16,
-    name: "Sandstone Relaxed Fit",
-    category: "T-Shirts",
-    price: "₹1,399",
+    id: 7,
+    name: "Product 7",
+    category: "Category 3",
+    price: "₹2,899",
     image: "/assets/product-extra-3.png",
     isPremium: false
   },
   {
-    id: 17,
-    name: "Midnight Silk Blend",
-    category: "Premium",
-    price: "₹4,999",
+    id: 8,
+    name: "Product 8",
+    category: "Category 4",
+    price: "₹3,499",
     image: "/assets/product-extra-4.png",
+    isPremium: false
+  },
+  {
+    id: 9,
+    name: "Product 9",
+    category: "Category 1",
+    price: "₹1,299",
+    image: "/assets/product-extra-5.png",
+    isPremium: false
+  },
+  {
+    id: 10,
+    name: "Product 10",
+    category: "Category 5",
+    price: "₹5,299",
+    image: "/assets/shirt.png",
     isPremium: true
   },
   {
-    id: 18,
-    name: "Ivory Minimalist Tee",
-    category: "T-Shirts",
-    price: "₹1,199",
-    image: "/assets/product-extra-5.png",
+    id: 11,
+    name: "Product 11",
+    category: "Category 1",
+    price: "₹1,599",
+    image: "/assets/tshirt.png",
+    isPremium: false
+  },
+  {
+    id: 12,
+    name: "Product 12",
+    category: "Category 4",
+    price: "₹3,499",
+    image: "/assets/pants.png",
     isPremium: false
   }
 ];

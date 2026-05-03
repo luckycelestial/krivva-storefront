@@ -14,7 +14,7 @@ export default function ProfilePage() {
   }, []);
 
   return (
-    <div className="container animate-fade-in" style={{ paddingTop: '72px', paddingBottom: '120px' }}>
+    <div className="container animate-fade-in" style={{ paddingTop: '77px', paddingBottom: '120px' }}>
       {/* User Profile Header */}
       <section style={{ 
         display: 'grid', 
@@ -39,7 +39,7 @@ export default function ProfilePage() {
           }}>
             <div style={{ position: 'relative', width: '100%', height: '100%' }}>
               <Image 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLStH_uZTh0jB_HvBp8SMapP4ECpoLBB05wSBSrPLaUB1ZoBRPAY5Am25rWeZSwECkuYFuWz6bM8ofQmVO8rv9-KCn2JOeQC03qOD5V3c_T9NOa1Nc7gRtGX8hfw6iSivS0Ih8-84Pdv_Gi0rZPO3HTU-r3BK9s7B5gqPwSiqiONGZ0pmXOqyXC4h6W-7AJ_Edo5F0e4fYFGI7f5ZIwKWh7BuUE975-C1l9rHoFCzQdXlQpJoPQq7mcWOQeUQE46g5lXAqmor_jit1" 
+                src="/assets/profile-photo.png" 
                 alt="Profile photo" 
                 fill
                 unoptimized
@@ -137,8 +137,8 @@ export default function ProfilePage() {
         
         <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
           {[
-            { id: 'KR-22983', status: 'Delivered', items: '2x Royal White Shirt, 1x Cotton Chinos', date: 'Feb 15, 2024', total: '₹8,297' },
-            { id: 'KR-22812', status: 'Fulfilled', items: 'Classic Black T-Shirt, Navy Blue T-Shirt', date: 'Jan 28, 2024', total: '₹2,598' }
+            { id: 'KR-22983', status: 'Delivered', items: '2x Product 2, 1x Product 8', date: 'Feb 15, 2024', total: '₹8,297' },
+            { id: 'KR-22812', status: 'Fulfilled', items: 'Product 1, Product 5', date: 'Jan 28, 2024', total: '₹2,598' }
           ].map((order, i) => (
             <div key={i} style={{ 
               background: 'transparent', 
