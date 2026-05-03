@@ -91,8 +91,8 @@ export default function ShoppingBag() {
                 </div>
                 
                 <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
-                  <span style={{ fontSize: '10px', background: 'var(--surface-container-high)', padding: '2px 8px', borderRadius: '4px', fontWeight: 600 }}>{item.size}</span>
-                  <span style={{ fontSize: '10px', background: 'var(--surface-container-high)', padding: '2px 8px', borderRadius: '4px', fontWeight: 600 }}>{item.color}</span>
+                  <span style={{ fontSize: '10px', background: 'transparent', border: '1px solid var(--gold-luxury)', color: 'var(--gold-luxury)', padding: '2px 8px', borderRadius: '4px', fontWeight: 600 }}>{item.size}</span>
+                  <span style={{ fontSize: '10px', background: 'transparent', border: '1px solid var(--gold-luxury)', color: 'var(--gold-luxury)', padding: '2px 8px', borderRadius: '4px', fontWeight: 600 }}>{item.color}</span>
                 </div>
 
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '8px' }}>
