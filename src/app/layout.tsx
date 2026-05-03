@@ -4,8 +4,25 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Krivva by rethika | Luxe Minimalism",
+  metadataBase: new URL('https://krivva.vercel.app'),
+  title: "Krivva by rethika",
   description: "Long lasting Clothings crafted in Tiruppur",
+  openGraph: {
+    title: "Krivva by rethika",
+    description: "Long lasting Clothings crafted in Tiruppur",
+    url: "https://krivva.vercel.app",
+    siteName: "Krivva by rethika",
+    images: [
+      {
+        url: "/assets/Krivva_logo.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Krivva by rethika Logo",
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
+  },
 };
 
 import { CartProvider } from "@/context/CartContext";
