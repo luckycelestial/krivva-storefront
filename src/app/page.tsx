@@ -83,10 +83,10 @@ export default function Home() {
           marginBottom: '40px'
         }}>
           {[
-            { id: 101, name: "New Arrival 01", price: "₹689", image: "/assets/arrival-1.jpg" },
-            { id: 102, name: "New Arrival 02", price: "₹689", image: "/assets/arrival-2.jpg" },
-            { id: 103, name: "New Arrival 03", price: "₹689", image: "/assets/arrival-3.png" },
-            { id: 104, name: "New Arrival 04", price: "₹689", image: "/assets/arrival-4.png" }
+            { id: 101, name: "New Arrival 01", price: "₹1,699", image: "/assets/arrival-1.jpg" },
+            { id: 102, name: "New Arrival 02", price: "₹1,699", image: "/assets/arrival-2.jpg" },
+            { id: 103, name: "New Arrival 03", price: "₹1,699", image: "/assets/arrival-3.png" },
+            { id: 104, name: "New Arrival 04", price: "₹1,699", image: "/assets/arrival-4.png" }
           ].map((item) => (
             <Link key={item.id} href={`/products/${item.id}`} style={{ textDecoration: 'none', color: 'inherit', cursor: 'pointer' }}>
                <div style={{ position: 'relative', aspectRatio: '3/4', background: 'transparent', borderRadius: '12px', overflow: 'hidden', marginBottom: '12px', border: '2px solid var(--gold-luxury)' }}>
@@ -122,8 +122,8 @@ export default function Home() {
       </section>
 
       {/* Value Propositions - Auto Scrolling Marquee */}
-      <section style={{ background: 'transparent', padding: '60px 0', overflow: 'hidden' }}>
-        <div className="marquee-container">
+      <section style={{ background: 'transparent', padding: '60px 0', overflow: 'hidden' }} className="no-scrollbar">
+        <div className="marquee-container no-scrollbar">
           {[...Array(3)].map((_, i) => (
             <div key={i} style={{ display: 'flex', gap: '20px' }}>
               {[
@@ -145,13 +145,14 @@ export default function Home() {
                   <div style={{ 
                     width: '56px', 
                     height: '56px', 
-                    background: 'var(--surface-container-low)', 
+                    background: 'rgba(255, 255, 255, 0.1)', 
                     borderRadius: '16px', 
                     display: 'flex', 
                     alignItems: 'center', 
                     justifyContent: 'center',
                     margin: '0 auto 16px',
-                    color: 'var(--action-blue)'
+                    color: 'var(--gold-luxury)',
+                    border: '1px solid var(--gold-luxury)'
                   }}>
                     <span className="material-symbols-outlined" style={{ fontSize: '32px' }}>{value.icon}</span>
                   </div>

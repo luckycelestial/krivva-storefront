@@ -14,7 +14,7 @@ export default function ProfilePage() {
   }, []);
 
   return (
-    <div className="container animate-fade-in" style={{ paddingTop: '77px', paddingBottom: '120px' }}>
+    <div className="container animate-fade-in" style={{ paddingTop: '82px', paddingBottom: '120px' }}>
       {/* User Profile Header */}
       <section style={{ 
         display: 'grid', 
@@ -137,8 +137,8 @@ export default function ProfilePage() {
         
         <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
           {[
-            { id: 'KR-22983', status: 'Delivered', items: '2x Product 2, 1x Product 8', date: 'Feb 15, 2024', total: '₹8,297' },
-            { id: 'KR-22812', status: 'Fulfilled', items: 'Product 1, Product 5', date: 'Jan 28, 2024', total: '₹2,598' }
+            { id: 'KR-22983', status: 'Delivered', items: '2x Product 2, 1x Product 8', date: 'Feb 15, 2024', total: '₹1,699' },
+            { id: 'KR-22812', status: 'Fulfilled', items: 'Product 1, Product 5', date: 'Jan 28, 2024', total: '₹1,699' }
           ].map((order, i) => (
             <div key={i} style={{ 
               background: 'transparent', 

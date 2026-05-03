@@ -417,3 +417,28 @@ input {
 .marquee-container:hover {
   animation-play-state: paused;
 }
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.icon-box-contrast {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid var(--gold-luxury) !important;
+  color: var(--ivory-white) !important;
+}
+
+.icon-box-contrast .material-symbols-outlined {
+  color: var(--gold-luxury) !important;
+}
+
+.icon-box-contrast p, .icon-box-contrast span {
+  color: var(--ivory-white) !important;
+}

@@ -9,7 +9,7 @@ const products = [
     id: 1,
     name: "Product 1",
     category: "Category 1",
-    price: "₹1,299",
+    price: "₹1,699",
     image: "/assets/arrival-1.jpg",
     details: ["/assets/arrival-1.jpg", "/assets/arrival-1.jpg"],
     description: "Our signature black tee is crafted from premium 100% long-staple cotton sourced directly from Tiruppur, Tamil Nadu. Designed for the Indian climate, it offers superior breathability and a structured fit that retains its shape wash after wash."
@@ -18,7 +18,7 @@ const products = [
     id: 2,
     name: "Product 2",
     category: "Category 2",
-    price: "₹2,499",
+    price: "₹1,699",
     image: "/assets/arrival-2.jpg",
     details: ["/assets/arrival-2.jpg", "/assets/arrival-2.jpg"],
     description: "The Royal White Shirt is an essential for every modern wardrobe. Made from fine Giza cotton, it features a crisp finish and refined silhouette perfect for both business and evening settings."
@@ -27,7 +27,7 @@ const products = [
     id: 3,
     name: "Product 3",
     category: "Category 1",
-    price: "₹1,499",
+    price: "₹1,699",
     image: "/assets/arrival-3.png",
     details: ["/assets/arrival-3.png", "/assets/arrival-3.png"],
     description: "Experience the legacy of Tiruppur cotton. This tee offers unmatched comfort with a focus on sustainable production and durability."
@@ -36,7 +36,7 @@ const products = [
     id: 4,
     name: "Product 4",
     category: "Category 2",
-    price: "₹3,299",
+    price: "₹1,699",
     image: "/assets/arrival-4.png",
     details: ["/assets/arrival-4.png", "/assets/arrival-4.png"],
     description: "Breathable, sophisticated, and timeless. Our Heritage Linen Shirt is pre-washed for extra softness and designed with a relaxed yet tailored fit."
@@ -45,7 +45,7 @@ const products = [
     id: 5,
     name: "Product 5",
     category: "Category 1",
-    price: "₹1,899",
+    price: "₹1,699",
     image: "/assets/product-extra-1.png",
     details: ["/assets/product-extra-1.png", "/assets/product-extra-1.png"],
     description: "A modern take on a classic silhouette. The Premium Indigo Polo features a rich, deep hue and a slightly tapered fit for a contemporary look."
@@ -54,7 +54,7 @@ const products = [
     id: 6,
     name: "Product 6",
     category: "Category 2",
-    price: "₹4,499",
+    price: "₹1,699",
     image: "/assets/product-extra-2.png",
     details: ["/assets/product-extra-2.png", "/assets/product-extra-2.png"],
   description: "Our Signature Gold Edition shirt represents the pinnacle of Krivva craftsmanship. Featuring subtle gold-thread detailing and a luxurious hand-feel."
@@ -63,7 +63,7 @@ const products = [
     id: 7,
     name: "Product 7",
     category: "Category 3",
-    price: "₹2,899",
+    price: "₹1,699",
     image: "/assets/product-extra-3.png",
     details: ["/assets/product-extra-3.png", "/assets/product-extra-3.png"],
     description: "Merging traditional Indian aesthetics with modern shirting. The Kurta Shirt is versatile, elegant, and perfect for cultural celebrations or upscale casual wear."
@@ -72,7 +72,7 @@ const products = [
     id: 8,
     name: "Product 8",
     category: "Category 4",
-    price: "₹3,499",
+    price: "₹1,699",
     image: "/assets/product-extra-4.png",
     details: ["/assets/product-extra-4.png", "/assets/product-extra-4.png"],
     description: "Tailored for the modern professional. These chinos offer a slight stretch for all-day comfort without compromising on a sharp, clean look."
@@ -81,7 +81,7 @@ const products = [
     id: 9,
     name: "Product 9",
     category: "Category 1",
-    price: "₹1,299",
+    price: "₹1,699",
     image: "/assets/product-extra-5.png",
     details: ["/assets/product-extra-5.png", "/assets/product-extra-5.png"],
     description: "Functional design meets street aesthetic. The Urban Utility Tee features reinforced stitching and a slightly heavier weight fabric for everyday durability."
@@ -317,17 +317,17 @@ export default function ProductDetail({ params }: { params: Promise<{ id: string
           </div>
           
           <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', gap: '24px' }}>
-            <div style={{ padding: '24px', background: 'var(--ivory-white)', border: '1px solid var(--border-light)', borderRadius: '12px', display: 'flex', alignItems: 'center', gap: '16px' }}>
-              <span className="material-symbols-outlined" style={{ color: 'var(--action-blue)', fontSize: '32px' }}>architecture</span>
+            <div style={{ padding: '24px', borderRadius: '12px', display: 'flex', alignItems: 'center', gap: '16px' }} className="icon-box-contrast">
+              <span className="material-symbols-outlined" style={{ fontSize: '32px' }}>architecture</span>
               <div>
-                <p className="text-caption" style={{ fontWeight: 600, color: 'var(--dark-grey)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Fit</p>
+                <p className="text-caption" style={{ fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.1em' }}>Fit</p>
                 <p className="text-body-lg" style={{ fontWeight: 500 }}>Modern Classic Fit</p>
               </div>
             </div>
-            <div style={{ padding: '24px', background: 'var(--ivory-white)', border: '1px solid var(--border-light)', borderRadius: '12px', display: 'flex', alignItems: 'center', gap: '16px' }}>
-              <span className="material-symbols-outlined" style={{ color: 'var(--action-blue)', fontSize: '32px' }}>eco</span>
+            <div style={{ padding: '24px', borderRadius: '12px', display: 'flex', alignItems: 'center', gap: '16px' }} className="icon-box-contrast">
+              <span className="material-symbols-outlined" style={{ fontSize: '32px' }}>eco</span>
               <div>
-                <p className="text-caption" style={{ fontWeight: 600, color: 'var(--dark-grey)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Origin</p>
+                <p className="text-caption" style={{ fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.1em' }}>Origin</p>
                 <p className="text-body-lg" style={{ fontWeight: 500 }}>100% Tiruppur Cotton</p>
               </div>
             </div>
