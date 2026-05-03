@@ -116,9 +116,9 @@ export default function Home() {
 
       {/* Value Propositions - Auto Scrolling Marquee */}
       <section style={{ background: 'transparent', padding: '60px 0', overflow: 'hidden' }}>
-        <div className="marquee-container">
-          {[...Array(3)].map((_, i) => (
-            <div key={i} style={{ display: 'flex', gap: '20px', paddingRight: '20px' }}>
+        <div className="marquee-wrapper">
+          {[...Array(2)].map((_, i) => (
+            <div key={i} className="marquee-content">
               {[
                 { icon: "workspace_premium", title: "Premium T-Shirts", desc: "Long lasting craftsmanship" },
                 { icon: "eco", title: "Pure Cotton", desc: "Sourced from Tiruppur" },

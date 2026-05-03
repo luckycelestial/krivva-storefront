@@ -378,15 +378,22 @@ input {
 
 @keyframes marquee {
   0% { transform: translateX(0); }
-  100% { transform: translateX(-33.33%); }
+  100% { transform: translateX(calc(-100% - 20px)); }
 }
 
-.marquee-container {
+.marquee-wrapper {
   display: flex;
-  width: max-content;
+  overflow: hidden;
+  gap: 20px;
+}
+
+.marquee-content {
+  display: flex;
+  flex-shrink: 0;
+  gap: 20px;
   animation: marquee 30s linear infinite;
 }
 
-.marquee-container:hover {
+.marquee-wrapper:hover .marquee-content {
   animation-play-state: paused;
 }
