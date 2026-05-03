@@ -318,14 +318,14 @@ export default function ProductDetail({ params }: { params: Promise<{ id: string
           
           <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', gap: '24px' }}>
             <div style={{ padding: '24px', background: 'var(--ivory-white)', border: '1px solid var(--border-light)', borderRadius: '12px', display: 'flex', alignItems: 'center', gap: '16px' }}>
-              <span className="material-symbols-outlined" style={{ color: 'var(--warm-bronze)', fontSize: '32px' }}>architecture</span>
+              <span className="material-symbols-outlined" style={{ color: 'var(--action-blue)', fontSize: '32px' }}>architecture</span>
               <div>
                 <p className="text-caption" style={{ fontWeight: 600, color: 'var(--dark-grey)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Fit</p>
                 <p className="text-body-lg" style={{ fontWeight: 500 }}>Modern Classic Fit</p>
               </div>
             </div>
             <div style={{ padding: '24px', background: 'var(--ivory-white)', border: '1px solid var(--border-light)', borderRadius: '12px', display: 'flex', alignItems: 'center', gap: '16px' }}>
-              <span className="material-symbols-outlined" style={{ color: 'var(--warm-bronze)', fontSize: '32px' }}>eco</span>
+              <span className="material-symbols-outlined" style={{ color: 'var(--action-blue)', fontSize: '32px' }}>eco</span>
               <div>
                 <p className="text-caption" style={{ fontWeight: 600, color: 'var(--dark-grey)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Origin</p>
                 <p className="text-body-lg" style={{ fontWeight: 500 }}>100% Tiruppur Cotton</p>

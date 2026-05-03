@@ -151,7 +151,7 @@ export default function Home() {
                     alignItems: 'center', 
                     justifyContent: 'center',
                     margin: '0 auto 16px',
-                    color: 'var(--gold-luxury)'
+                    color: 'var(--action-blue)'
                   }}>
                     <span className="material-symbols-outlined" style={{ fontSize: '32px' }}>{value.icon}</span>
                   </div>
