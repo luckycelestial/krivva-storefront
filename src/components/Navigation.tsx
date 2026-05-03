@@ -66,8 +66,8 @@ export default function Navigation() {
           animation: 'slideUp 0.3s cubic-bezier(0.4, 0, 0.2, 1)'
         }}>
           <div style={{
-            background: 'var(--charcoal-black)',
-            color: 'white',
+            background: 'var(--action-blue)',
+            color: 'var(--ivory-white)',
             padding: '12px 24px',
             borderRadius: '99px',
             display: 'flex',
