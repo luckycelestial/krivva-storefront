@@ -21,7 +21,7 @@ export default function Home() {
         flexDirection: 'column', 
         alignItems: 'center', 
         width: '100%',
-        background: 'white',
+        background: 'transparent',
         position: 'relative'
       }}>
         <div style={{ width: '100%' }}>
@@ -31,7 +31,9 @@ export default function Home() {
             style={{ 
               width: '100%', 
               height: 'auto', 
-              display: 'block'
+              display: 'block',
+              border: '2px solid var(--gold-luxury)',
+              borderRadius: '12px'
             }} 
           />
         </div>
@@ -64,7 +66,7 @@ export default function Home() {
       </section>
 
       {/* New Arrivals Section */}
-      <section className="container" style={{ padding: '20px 20px 40px', background: 'white' }}>
+      <section className="container" style={{ padding: '20px 20px 40px', background: 'transparent' }}>
         <h2 className="text-h2" style={{ marginBottom: '24px', fontSize: isMobile ? '22px' : '32px' }}>New Arrivals</h2>
         <div style={{ 
           display: 'grid', 
@@ -79,7 +81,7 @@ export default function Home() {
             { id: 104, name: "New Arrival 04", price: "₹689", image: "/new_arrivals/arrival-4.jpeg" }
           ].map((item) => (
             <Link key={item.id} href={`/products/${item.id}`} style={{ textDecoration: 'none', color: 'inherit', cursor: 'pointer' }}>
-               <div style={{ aspectRatio: '3/4', background: 'white', borderRadius: '12px', overflow: 'hidden', marginBottom: '12px', border: '1px solid var(--border-light)' }}>
+               <div style={{ aspectRatio: '3/4', background: 'transparent', borderRadius: '12px', overflow: 'hidden', marginBottom: '12px', border: '2px solid var(--gold-luxury)' }}>
                   <img src={item.image} alt={item.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                </div>
                <p className="text-body-sm" style={{ fontWeight: 600, marginBottom: '4px' }}>{item.name}</p>
@@ -95,7 +97,8 @@ export default function Home() {
           overflow: 'hidden', 
           background: 'var(--action-blue)',
           aspectRatio: isMobile ? '9/16' : '16/9',
-          boxShadow: '0 20px 40px rgba(61,11,28,0.2)'
+          boxShadow: '0 20px 40px rgba(61,11,28,0.2)',
+          border: '2px solid var(--gold-luxury)'
         }}>
           <video 
             src="/new_arrivals/hero-video.mp4" 
@@ -109,7 +112,7 @@ export default function Home() {
       </section>
 
       {/* Value Propositions - Auto Scrolling Marquee */}
-      <section style={{ background: 'var(--surface-container)', padding: '60px 0', overflow: 'hidden' }}>
+      <section style={{ background: 'transparent', padding: '60px 0', overflow: 'hidden' }}>
         <div className="marquee-container">
           {[...Array(3)].map((_, i) => (
             <div key={i} style={{ display: 'flex', gap: '20px' }}>
@@ -123,11 +126,11 @@ export default function Home() {
                 <div key={index} style={{ 
                   flex: '0 0 280px',
                   padding: '32px 24px',
-                  background: 'white',
+                  background: 'rgba(255,255,255,0.05)',
                   borderRadius: '20px',
                   textAlign: 'center',
-                  boxShadow: '0 8px 24px rgba(0,0,0,0.04)',
-                  border: '1px solid var(--border-light)'
+                  boxShadow: '0 8px 24px rgba(0,0,0,0.2)',
+                  border: '1px solid var(--gold-luxury)'
                 }}>
                   <div style={{ 
                     width: '56px', 
@@ -161,7 +164,7 @@ export default function Home() {
             padding: '0 20px' 
           }}>
             <h2 className="text-h2" style={{ marginBottom: '20px', fontSize: isMobile ? '24px' : '32px' }}>Wholesale Partnership</h2>
-            <p className="text-body-reg" style={{ color: 'var(--slate-gray)', marginBottom: '32px', lineHeight: '1.6' }}>
+            <p className="text-body-reg" style={{ color: 'var(--ivory-white)', marginBottom: '32px', lineHeight: '1.6' }}>
               Partner with Krivva by rethika to bring premium Tiruppur craftsmanship to your retail space. 
               We offer exclusive wholesale pricing and custom production services for bulk orders.
             </p>

@@ -138,10 +138,11 @@ export default function ProductsPage() {
             display: 'flex', 
             alignItems: 'center', 
             gap: '8px', 
-            border: '1px solid var(--border-light)', 
+            border: '1px solid var(--gold-luxury)', 
             padding: '8px 16px', 
             borderRadius: '99px', 
-            background: 'white',
+            background: 'transparent',
+            color: 'var(--ivory-white)',
             fontSize: '12px',
             fontWeight: 700,
             textTransform: 'uppercase',
@@ -170,7 +171,7 @@ export default function ProductsPage() {
                 marginBottom: '12px', 
                 borderRadius: '8px', 
                 overflow: 'hidden',
-                border: product.isPremium ? '1px solid var(--gold-luxury)' : '1px solid var(--border-light)',
+                border: '2px solid var(--gold-luxury)',
               }}>
                 <img 
                   src={product.image} 
