@@ -93,15 +93,17 @@ export default function Home() {
         {/* New Arrival Feature Video */}
         <div style={{ 
           width: '100%', 
+          maxWidth: '400px',
+          margin: '0 auto',
           borderRadius: '16px', 
           overflow: 'hidden', 
           background: 'var(--action-blue)',
-          aspectRatio: isMobile ? '9/16' : '16/9',
+          aspectRatio: '9/16',
           boxShadow: '0 20px 40px rgba(61,11,28,0.2)',
           border: '2px solid var(--gold-luxury)'
         }}>
           <video 
-            src="/new_arrivals/hero-video.mp4" 
+            src="/Video-160.mp4" 
             autoPlay 
             muted 
             loop 
