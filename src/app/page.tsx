@@ -39,7 +39,7 @@ export default function Home() {
         {/* Explore Collections Button in its own Symmetric Black Box */}
         <div style={{ 
           width: '100%', 
-          background: '#000', 
+          background: 'var(--action-blue)', 
           padding: isMobile ? '40px 20px' : '64px 20px',
           display: 'flex',
           justifyContent: 'center',
@@ -93,9 +93,9 @@ export default function Home() {
           width: '100%', 
           borderRadius: '16px', 
           overflow: 'hidden', 
-          background: '#000',
+          background: 'var(--action-blue)',
           aspectRatio: isMobile ? '9/16' : '16/9',
-          boxShadow: '0 20px 40px rgba(0,0,0,0.1)'
+          boxShadow: '0 20px 40px rgba(61,11,28,0.2)'
         }}>
           <video 
             src="/new_arrivals/hero-video.mp4" 
