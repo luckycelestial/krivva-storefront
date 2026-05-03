@@ -7,145 +7,73 @@ import Image from "next/image";
 const products = [
   {
     id: 1,
-    name: "Classic Black T-Shirt",
-    category: "T-Shirts",
-    price: "₹1,299",
-    image: "/products/product-1.jpeg",
+    name: "Product 1",
+    category: "Category 1",
+    price: "₹1,699",
+    image: "/assets/arrival-1.jpg",
     isPremium: true
   },
   {
     id: 2,
-    name: "Royal White Shirt",
-    category: "Shirts",
-    price: "₹2,499",
-    image: "/products/product-2.jpeg",
+    name: "Product 2",
+    category: "Category 2",
+    price: "₹1,699",
+    image: "/assets/arrival-2.jpg",
     isPremium: true
   },
   {
     id: 3,
-    name: "Tiruppur Cotton Tee",
-    category: "T-Shirts",
-    price: "₹1,499",
-    image: "/products/product-3.jpeg",
+    name: "Product 3",
+    category: "Category 1",
+    price: "₹1,699",
+    image: "/assets/arrival-3.png",
     isPremium: false
   },
   {
     id: 4,
-    name: "Heritage Linen Shirt",
-    category: "Shirts",
-    price: "₹3,299",
-    image: "/products/product-4.jpeg",
+    name: "Product 4",
+    category: "Category 2",
+    price: "₹1,699",
+    image: "/assets/arrival-4.png",
     isPremium: true
   },
   {
     id: 5,
-    name: "Premium Indigo Polo",
-    category: "T-Shirts",
-    price: "₹1,899",
-    image: "/products/product-5.jpeg",
+    name: "Product 5",
+    category: "Category 1",
+    price: "₹1,699",
+    image: "/assets/product-extra-1.png",
     isPremium: false
   },
   {
     id: 6,
-    name: "Signature Gold Edition",
-    category: "Shirts",
-    price: "₹4,499",
-    image: "/products/product-6.jpeg",
-    isPremium: true
-  },
-  {
-    id: 7,
-    name: "Classic Kurta Shirt",
-    category: "Heritage",
-    price: "₹2,899",
-    image: "/products/product-7.jpeg",
-    isPremium: false
-  },
-  {
-    id: 8,
-    name: "Modern Fit Chinos",
-    category: "Pants",
-    price: "₹3,499",
-    image: "/products/product-8.jpeg",
-    isPremium: false
-  },
-  {
-    id: 9,
-    name: "Urban Utility T-Shirt",
-    category: "T-Shirts",
-    price: "₹1,299",
-    image: "/products/product-9.jpeg",
-    isPremium: false
-  },
-  {
-    id: 10,
-    name: "Luxury Silk Blend Shirt",
-    category: "Premium",
-    price: "₹5,299",
-    image: "/products/product-10.jpeg",
-    isPremium: true
-  },
-  {
-    id: 11,
-    name: "Artisan Crafted Tee",
-    category: "T-Shirts",
-    price: "₹1,599",
-    image: "/products/product-11.jpeg",
-    isPremium: false
-  },
-  {
-    id: 12,
-    name: "Classic White Poplin",
-    category: "Shirts",
-    price: "₹2,199",
-    image: "/assets/shirt.png",
-    isPremium: false
-  },
-  {
-    id: 13,
-    name: "Premium Crew Tee",
-    category: "T-Shirts",
-    price: "₹1,199",
-    image: "/assets/tshirt.png",
-    isPremium: false
-  },
-  {
-    id: 14,
-    name: "Luxury Velvet Tee",
-    category: "T-Shirts",
-    price: "₹1,999",
-    image: "/assets/product-extra-1.png",
-    isPremium: true
-  },
-  {
-    id: 15,
-    name: "Onyx Collection Shirt",
-    category: "Shirts",
-    price: "₹2,799",
+    name: "Product 6",
+    category: "Category 2",
+    price: "₹1,699",
     image: "/assets/product-extra-2.png",
     isPremium: true
   },
   {
-    id: 16,
-    name: "Sandstone Relaxed Fit",
-    category: "T-Shirts",
-    price: "₹1,399",
+    id: 7,
+    name: "Product 7",
+    category: "Category 3",
+    price: "₹1,699",
     image: "/assets/product-extra-3.png",
     isPremium: false
   },
   {
-    id: 17,
-    name: "Midnight Silk Blend",
-    category: "Premium",
-    price: "₹4,999",
+    id: 8,
+    name: "Product 8",
+    category: "Category 4",
+    price: "₹1,699",
     image: "/assets/product-extra-4.png",
-    isPremium: true
+    isPremium: false
   },
   {
-    id: 18,
-    name: "Ivory Minimalist Tee",
-    category: "T-Shirts",
-    price: "₹1,199",
+    id: 9,
+    name: "Product 9",
+    category: "Category 1",
+    price: "₹1,699",
     image: "/assets/product-extra-5.png",
     isPremium: false
   }
@@ -227,7 +155,7 @@ export default function ProductsPage() {
                   <div style={{ position: 'absolute', top: '10px', left: '10px' }}>
                     <span style={{ 
                       background: 'var(--gold-luxury)', 
-                      color: 'var(--charcoal-black)', 
+                      color: 'var(--action-blue)', 
                       fontSize: '8px', 
                       fontWeight: 800, 
                       padding: '3px 8px', 
@@ -239,9 +167,9 @@ export default function ProductsPage() {
                 )}
               </div>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
-                <p className="text-caption" style={{ color: 'var(--medium-grey)', textTransform: 'uppercase', letterSpacing: '0.1em', fontSize: '10px', fontWeight: 600 }}>{product.category}</p>
+                <p className="text-caption" style={{ color: 'var(--gold-luxury)', textTransform: 'uppercase', letterSpacing: '0.1em', fontSize: '10px', fontWeight: 600 }}>{product.category}</p>
                 <h3 className="text-body-reg" style={{ fontWeight: 600, fontSize: isMobile ? '13px' : '16px', lineHeight: 1.2 }}>{product.name}</h3>
-                <p className="text-body-reg" style={{ color: 'var(--charcoal-black)', fontWeight: 700, fontSize: isMobile ? '13px' : '16px', marginTop: '4px' }}>{product.price}</p>
+                <p className="text-body-reg" style={{ color: 'var(--ivory-white)', fontWeight: 700, fontSize: isMobile ? '13px' : '16px', marginTop: '4px' }}>{product.price}</p>
               </div>
             </div>
           </Link>

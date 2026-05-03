@@ -86,10 +86,10 @@ export default function Home() {
           marginBottom: '40px'
         }}>
           {[
-            { id: 101, name: "New Arrival 01", price: "₹689", image: "/assets/arrival-1.jpg" },
-            { id: 102, name: "New Arrival 02", price: "₹689", image: "/assets/arrival-2.jpg" },
-            { id: 103, name: "New Arrival 03", price: "₹689", image: "/assets/arrival-3.png" },
-            { id: 104, name: "New Arrival 04", price: "₹689", image: "/assets/arrival-4.png" }
+            { id: 101, name: "New Arrival 01", price: "₹1,699", image: "/assets/arrival-1.jpg" },
+            { id: 102, name: "New Arrival 02", price: "₹1,699", image: "/assets/arrival-2.jpg" },
+            { id: 103, name: "New Arrival 03", price: "₹1,699", image: "/assets/arrival-3.png" },
+            { id: 104, name: "New Arrival 04", price: "₹1,699", image: "/assets/arrival-4.png" }
           ].map((item) => (
             <Link key={item.id} href={`/products/${item.id}`} style={{ textDecoration: 'none', color: 'inherit', cursor: 'pointer' }}>
                <div style={{ position: 'relative', aspectRatio: '3/4', background: 'transparent', borderRadius: '12px', overflow: 'hidden', marginBottom: '12px', border: '2px solid var(--gold-luxury)' }}>
@@ -114,7 +114,7 @@ export default function Home() {
           border: '2px solid var(--gold-luxury)'
         }}>
           <video 
-            src="/Video-160.mp4" 
+            src="/assets/Video-160.mp4" 
             autoPlay 
             muted 
             loop 
@@ -125,12 +125,12 @@ export default function Home() {
       </section>
 
       {/* Value Propositions - Auto Scrolling Marquee */}
-      <section style={{ background: 'transparent', padding: '60px 0', overflow: 'hidden' }}>
+      <section style={{ background: 'transparent', padding: '60px 0', overflow: 'hidden' }} className="no-scrollbar">
         <div className="marquee-wrapper">
           {[...Array(2)].map((_, i) => (
             <div key={i} className="marquee-content">
               {[
-                { icon: "workspace_premium", title: "Premium T-Shirts", desc: "Long lasting craftsmanship" },
+                { icon: "workspace_premium", title: "Premium Salwars", desc: "Long lasting craftsmanship" },
                 { icon: "eco", title: "Pure Cotton", desc: "Sourced from Tiruppur" },
                 { icon: "local_shipping", title: "Pan-India Delivery", desc: "Fast & Secure shipping" },
                 { icon: "history", title: "Heritage Fits", desc: "Classic Indian silhouettes" },

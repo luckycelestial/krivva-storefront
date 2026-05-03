@@ -45,10 +45,11 @@ export default function Navigation() {
         height: '72px'
       }}>
         <Link href="/" className="logo" style={{ 
-          fontSize: '24px', 
-          letterSpacing: '0.2em', 
           color: 'var(--gold-luxury)', 
-          fontWeight: '700' 
+          fontWeight: '700',
+          maxWidth: '80%',
+          textAlign: 'center',
+          transition: 'all 0.3s ease'
         }}>
           Krivva by rethika
         </Link>
@@ -172,8 +173,8 @@ export default function Navigation() {
                 position: 'absolute',
                 top: '-8px',
                 right: '-8px',
-                background: 'var(--brand-gold)',
-                color: 'white',
+                background: 'var(--gold-luxury)',
+                color: 'var(--action-blue)',
                 fontSize: '10px',
                 fontWeight: 'bold',
                 minWidth: '16px',

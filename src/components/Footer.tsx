@@ -46,7 +46,7 @@ export default function Footer() {
         margin: '0 auto'
       }}>
         {/* Brand Section */}
-        <div>
+        <div style={{ gridColumn: 'span 1' }}>
           <h3 style={{ 
             fontFamily: "'Playfair Display', serif", 
             color: 'var(--gold-luxury)',
@@ -70,45 +70,53 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Menu Section */}
-        <div>
-          <h4 style={{ color: 'var(--gold-luxury)', marginBottom: '20px', fontSize: '16px', fontWeight: 600 }}>Menu</h4>
-          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '16px' }}>
-            <li>
-              <Link href="/" style={{ color: 'var(--ivory-white)', textDecoration: 'none', fontSize: '14px', display: 'flex', alignItems: 'center', gap: '8px', opacity: 0.9 }}>
-                <span className="material-symbols-outlined" style={{ fontSize: '18px' }}>home</span> Home
-              </Link>
-            </li>
-            <li>
-              <Link href="/products" style={{ color: 'var(--ivory-white)', textDecoration: 'none', fontSize: '14px', display: 'flex', alignItems: 'center', gap: '8px', opacity: 0.9 }}>
-                <span className="material-symbols-outlined" style={{ fontSize: '18px' }}>shopping_bag</span> Shop
-              </Link>
-            </li>
-            <li>
-              <a href="https://wa.me/919944400399" style={{ color: 'var(--ivory-white)', textDecoration: 'none', fontSize: '14px', display: 'flex', alignItems: 'center', gap: '8px', opacity: 0.9 }}>
-                <span className="material-symbols-outlined" style={{ fontSize: '18px' }}>call</span> Contact Us
-              </a>
-            </li>
-          </ul>
-        </div>
+        {/* Menu & Policy side by side on mobile */}
+        <div style={{ 
+          display: 'grid', 
+          gridTemplateColumns: '1fr 1fr', 
+          gap: '20px',
+          gridColumn: 'span 1'
+        }}>
+          {/* Menu Section */}
+          <div>
+            <h4 style={{ color: 'var(--gold-luxury)', marginBottom: '20px', fontSize: '16px', fontWeight: 600 }}>Menu</h4>
+            <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '16px' }}>
+              <li>
+                <Link href="/" style={{ color: 'var(--ivory-white)', textDecoration: 'none', fontSize: '14px', display: 'flex', alignItems: 'center', gap: '8px', opacity: 0.9 }}>
+                  <span className="material-symbols-outlined" style={{ fontSize: '18px' }}>home</span> Home
+                </Link>
+              </li>
+              <li>
+                <Link href="/products" style={{ color: 'var(--ivory-white)', textDecoration: 'none', fontSize: '14px', display: 'flex', alignItems: 'center', gap: '8px', opacity: 0.9 }}>
+                  <span className="material-symbols-outlined" style={{ fontSize: '18px' }}>shopping_bag</span> Shop
+                </Link>
+              </li>
+              <li>
+                <a href="https://wa.me/919944400399" style={{ color: 'var(--ivory-white)', textDecoration: 'none', fontSize: '14px', display: 'flex', alignItems: 'center', gap: '8px', opacity: 0.9 }}>
+                  <span className="material-symbols-outlined" style={{ fontSize: '18px' }}>call</span> Contact
+                </a>
+              </li>
+            </ul>
+          </div>
 
-        {/* Policy Section */}
-        <div>
-          <h4 style={{ color: 'var(--gold-luxury)', marginBottom: '20px', fontSize: '16px', fontWeight: 600 }}>Policy</h4>
-          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '16px' }}>
-            <li><Link href="#" style={{ color: 'var(--ivory-white)', textDecoration: 'none', fontSize: '14px', opacity: 0.9, display: 'flex', alignItems: 'center', gap: '8px' }}><span className="material-symbols-outlined" style={{ fontSize: '18px' }}>local_shipping</span>Shipping Policy</Link></li>
-            <li><Link href="#" style={{ color: 'var(--ivory-white)', textDecoration: 'none', fontSize: '14px', opacity: 0.9, display: 'flex', alignItems: 'center', gap: '8px' }}><span className="material-symbols-outlined" style={{ fontSize: '18px' }}>privacy_tip</span>Privacy Policy</Link></li>
-            <li><Link href="#" style={{ color: 'var(--ivory-white)', textDecoration: 'none', fontSize: '14px', opacity: 0.9, display: 'flex', alignItems: 'center', gap: '8px' }}><span className="material-symbols-outlined" style={{ fontSize: '18px' }}>gavel</span>Terms & Conditions</Link></li>
-            <li><Link href="#" style={{ color: 'var(--ivory-white)', textDecoration: 'none', fontSize: '14px', opacity: 0.9, display: 'flex', alignItems: 'center', gap: '8px' }}><span className="material-symbols-outlined" style={{ fontSize: '18px' }}>assignment_return</span>Refund Policy</Link></li>
-          </ul>
+          {/* Policy Section */}
+          <div>
+            <h4 style={{ color: 'var(--gold-luxury)', marginBottom: '20px', fontSize: '16px', fontWeight: 600 }}>Policy</h4>
+            <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '16px' }}>
+              <li><Link href="#" style={{ color: 'var(--ivory-white)', textDecoration: 'none', fontSize: '14px', opacity: 0.9 }}>Shipping</Link></li>
+              <li><Link href="#" style={{ color: 'var(--ivory-white)', textDecoration: 'none', fontSize: '14px', opacity: 0.9 }}>Privacy</Link></li>
+              <li><Link href="#" style={{ color: 'var(--ivory-white)', textDecoration: 'none', fontSize: '14px', opacity: 0.9 }}>Terms</Link></li>
+              <li><Link href="#" style={{ color: 'var(--ivory-white)', textDecoration: 'none', fontSize: '14px', opacity: 0.9 }}>Refund</Link></li>
+            </ul>
+          </div>
         </div>
 
         {/* Contact Section */}
         <div>
           <h4 style={{ color: 'var(--gold-luxury)', marginBottom: '20px', fontSize: '16px', fontWeight: 600 }}>Contact</h4>
           <p style={{ fontSize: '14px', marginBottom: '8px', opacity: 0.9 }}>Questions? We're here for you</p>
-          <p style={{ fontSize: '14px', marginBottom: '20px', opacity: 0.9 }}>Monday - Saturday 10am-6pm.</p>
-          <p style={{ fontSize: '14px', marginBottom: '12px' }}><strong>WhatsApp/Call:</strong> +91 99444 00399</p>
+          <p style={{ fontSize: '14px', marginBottom: '20px', opacity: 0.9 }}>Mon - Sat 10am-6pm.</p>
+          <p style={{ fontSize: '14px', marginBottom: '12px' }}><strong>WhatsApp:</strong> +91 99444 00399</p>
           <p style={{ fontSize: '14px' }}><strong>Email:</strong> support@krivva.com</p>
         </div>
       </div>
