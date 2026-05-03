@@ -1,7 +1,6 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // @ts-expect-error - allowedDevOrigins is required for local network HMR access in some environments
   allowedDevOrigins: ["172.17.7.70"],
   experimental: {
     // Other experimental options if any
