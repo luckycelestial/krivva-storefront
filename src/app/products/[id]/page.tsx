@@ -109,8 +109,8 @@ const products = [
     name: "Classic White Poplin",
     category: "Shirts",
     price: "₹2,199",
-    image: "/shirt.png",
-    details: ["/shirt.png", "/shirt.png"],
+    image: "/assets/shirt.png",
+    details: ["/assets/shirt.png", "/assets/shirt.png"],
     description: "A crisp, versatile white shirt that transitions seamlessly from office to evening. Made from high-grade cotton poplin."
   },
   {
@@ -118,8 +118,8 @@ const products = [
     name: "Premium Crew Tee",
     category: "T-Shirts",
     price: "₹1,199",
-    image: "/tshirt.png",
-    details: ["/tshirt.png", "/tshirt.png"],
+    image: "/assets/tshirt.png",
+    details: ["/assets/tshirt.png", "/assets/tshirt.png"],
     description: "Our core essential. A perfect-weight crew neck tee designed to be the foundation of any outfit."
   },
   {
@@ -222,6 +222,7 @@ const COLORS = [
 
 const SIZES = ['XS', 'S', 'M', 'L', 'XL', 'XXL'];
 
+import Image from "next/image";
 import { useCart } from "@/context/CartContext";
 
 
@@ -289,10 +290,12 @@ export default function ProductDetail({ params }: { params: Promise<{ id: string
             boxShadow: '0 10px 40px -10px rgba(0, 0, 0, 0.08)',
             width: '100%'
           }}>
-            <img 
+            <Image 
               src={product.image} 
               alt={product.name} 
-              style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+              fill
+              priority
+              style={{ objectFit: 'cover' }}
             />
           </div>
           <div style={{ 
@@ -303,8 +306,8 @@ export default function ProductDetail({ params }: { params: Promise<{ id: string
             overflow: 'hidden'
           }}>
             {product.details.map((img, i) => (
-              <div key={i} style={{ aspectRatio: '1/1', overflow: 'hidden', borderRadius: '12px', background: 'white', border: '1px solid var(--border-light)' }}>
-                <img src={img} alt={`Detail ${i}`} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+              <div key={i} style={{ position: 'relative', aspectRatio: '1/1', overflow: 'hidden', borderRadius: '12px', background: 'white', border: '1px solid var(--border-light)' }}>
+                <Image src={img} alt={`Detail ${i}`} fill style={{ objectFit: 'cover' }} />
               </div>
             ))}
           </div>

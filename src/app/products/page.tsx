@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const products = [
   {
@@ -97,7 +98,7 @@ const products = [
     name: "Classic White Poplin",
     category: "Shirts",
     price: "₹2,199",
-    image: "/shirt.png",
+    image: "/assets/shirt.png",
     isPremium: false
   },
   {
@@ -105,7 +106,7 @@ const products = [
     name: "Premium Crew Tee",
     category: "T-Shirts",
     price: "₹1,199",
-    image: "/tshirt.png",
+    image: "/assets/tshirt.png",
     isPremium: false
   },
   {
@@ -213,12 +214,11 @@ export default function ProductsPage() {
                 overflow: 'hidden',
                 border: '2px solid var(--gold-luxury)',
               }}>
-                <img 
+                <Image 
                   src={product.image} 
                   alt={product.name} 
+                  fill
                   style={{ 
-                    width: '100%', 
-                    height: '100%', 
                     objectFit: 'cover', 
                     transition: 'transform 0.8s cubic-bezier(0.4, 0, 0.2, 1)'
                   }}

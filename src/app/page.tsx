@@ -1,5 +1,6 @@
 'use client';
 
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -24,14 +25,14 @@ export default function Home() {
         background: 'transparent',
         position: 'relative'
       }}>
-        <div style={{ width: '100%' }}>
-          <img 
-            src="/Krivva_logo.jpg" 
+        <div style={{ width: '100%', position: 'relative', aspectRatio: '16/9' }}>
+          <Image 
+            src="/assets/Krivva_logo.jpg" 
             alt="Krivva Logo" 
+            fill
+            priority
             style={{ 
-              width: '100%', 
-              height: 'auto', 
-              display: 'block',
+              objectFit: 'cover',
               border: '2px solid var(--gold-luxury)',
               borderRadius: '12px'
             }} 
@@ -81,8 +82,8 @@ export default function Home() {
             { id: 104, name: "New Arrival 04", price: "₹689", image: "/assets/arrival-4.png" }
           ].map((item) => (
             <Link key={item.id} href={`/products/${item.id}`} style={{ textDecoration: 'none', color: 'inherit', cursor: 'pointer' }}>
-               <div style={{ aspectRatio: '3/4', background: 'transparent', borderRadius: '12px', overflow: 'hidden', marginBottom: '12px', border: '2px solid var(--gold-luxury)' }}>
-                  <img src={item.image} alt={item.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+               <div style={{ position: 'relative', aspectRatio: '3/4', background: 'transparent', borderRadius: '12px', overflow: 'hidden', marginBottom: '12px', border: '2px solid var(--gold-luxury)' }}>
+                  <Image src={item.image} alt={item.name} fill style={{ objectFit: 'cover' }} />
                </div>
                <p className="text-body-sm" style={{ fontWeight: 600, marginBottom: '4px' }}>{item.name}</p>
                <p className="text-body-sm" style={{ opacity: 0.7 }}>{item.price}</p>

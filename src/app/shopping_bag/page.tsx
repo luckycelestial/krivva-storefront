@@ -1,6 +1,7 @@
 'use client';
 
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { useCart } from "@/context/CartContext";
 
@@ -68,13 +69,14 @@ export default function ShoppingBag() {
               transition: 'transform 0.2s ease'
             }} className="cart-item-card">
               <div style={{ 
+                position: 'relative',
                 width: '100%', 
                 aspectRatio: '3/4', 
                 overflow: 'hidden', 
                 borderRadius: '8px',
                 background: 'var(--surface-container-low)'
               }}>
-                <img src={item.image} alt={item.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                <Image src={item.image} alt={item.name} fill style={{ objectFit: 'cover' }} />
               </div>
               
               <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', flexGrow: 1 }}>

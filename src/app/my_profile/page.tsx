@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 export default function ProfilePage() {
   const [isMobile, setIsMobile] = useState(false);
@@ -36,11 +37,15 @@ export default function ProfilePage() {
             border: '2px solid var(--brand-gold)', 
             overflow: 'hidden'
           }}>
-            <img 
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLStH_uZTh0jB_HvBp8SMapP4ECpoLBB05wSBSrPLaUB1ZoBRPAY5Am25rWeZSwECkuYFuWz6bM8ofQmVO8rv9-KCn2JOeQC03qOD5V3c_T9NOa1Nc7gRtGX8hfw6iSivS0Ih8-84Pdv_Gi0rZPO3HTU-r3BK9s7B5gqPwSiqiONGZ0pmXOqyXC4h6W-7AJ_Edo5F0e4fYFGI7f5ZIwKWh7BuUE975-C1l9rHoFCzQdXlQpJoPQq7mcWOQeUQE46g5lXAqmor_jit1" 
-              alt="Profile photo" 
-              style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%' }}
-            />
+            <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+              <Image 
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLStH_uZTh0jB_HvBp8SMapP4ECpoLBB05wSBSrPLaUB1ZoBRPAY5Am25rWeZSwECkuYFuWz6bM8ofQmVO8rv9-KCn2JOeQC03qOD5V3c_T9NOa1Nc7gRtGX8hfw6iSivS0Ih8-84Pdv_Gi0rZPO3HTU-r3BK9s7B5gqPwSiqiONGZ0pmXOqyXC4h6W-7AJ_Edo5F0e4fYFGI7f5ZIwKWh7BuUE975-C1l9rHoFCzQdXlQpJoPQq7mcWOQeUQE46g5lXAqmor_jit1" 
+                alt="Profile photo" 
+                fill
+                unoptimized
+                style={{ objectFit: 'cover', borderRadius: '50%' }}
+              />
+            </div>
           </div>
         </div>
 
