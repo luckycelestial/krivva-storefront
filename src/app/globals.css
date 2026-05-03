@@ -242,7 +242,7 @@ h1, h2, h3, .font-serif {
 }
 
 .nav-item.active {
-  color: var(--action-blue);
+  color: var(--gold-luxury);
   font-weight: 700;
   transform: scale(1.1);
 }
@@ -252,7 +252,7 @@ h1, h2, h3, .font-serif {
 }
 
 .nav-item:hover:not(.active) {
-  color: var(--action-blue);
+  color: var(--gold-luxury);
 }
 
 .nav-item span:last-child {

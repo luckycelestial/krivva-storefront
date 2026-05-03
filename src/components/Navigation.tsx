@@ -37,8 +37,8 @@ export default function Navigation() {
         left: 0, 
         right: 0, 
         zIndex: 1000, 
-        background: '#1a1a1a',
-        borderBottom: '1px solid rgba(212, 175, 55, 0.2)',
+        background: 'var(--action-blue)',
+        borderBottom: '1px solid rgba(192, 140, 140, 0.2)',
         justifyContent: 'center', 
         boxShadow: 'none',
         transition: 'all 0.3s ease',
@@ -47,7 +47,7 @@ export default function Navigation() {
         <Link href="/" className="logo" style={{ 
           fontSize: '24px', 
           letterSpacing: '0.2em', 
-          color: '#d4af37', 
+          color: 'var(--gold-luxury)', 
           fontWeight: '700' 
         }}>
           Krivva by rethika
