@@ -53,9 +53,9 @@ export default function Home() {
             padding: isMobile ? '14px 48px' : '18px 80px', 
             fontSize: isMobile ? '16px' : '18px', 
             fontWeight: 600,
-            background: 'white',
-            color: 'black',
-            boxShadow: '0 4px 20px rgba(0,0,0,0.3)',
+            background: 'var(--gold-luxury)',
+            color: 'var(--action-blue)',
+            boxShadow: '0 4px 20px rgba(192,140,140,0.3)',
             transition: 'all 0.3s ease',
             textTransform: 'uppercase',
             letterSpacing: '0.1em'
@@ -170,12 +170,12 @@ export default function Home() {
             </p>
             <div style={{ display: 'flex', justifyContent: 'center' }}>
               <a 
-                href="https://wa.me/918825481550" 
+                href="https://wa.me/919944400399" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 style={{ textDecoration: 'none' }}
               >
-                <button className="btn-outline" style={{ borderRadius: '24px', padding: '12px 32px', minWidth: '200px' }}>Contact Wholesale Team</button>
+                <button className="btn-outline" style={{ borderRadius: '24px', padding: '12px 32px', minWidth: '200px', background: 'var(--gold-luxury)', color: 'var(--action-blue)', border: 'none', fontWeight: 600 }}>Contact Wholesale Team</button>
               </a>
             </div>
           </div>
