@@ -107,6 +107,46 @@ const products = [
     price: "₹1,199",
     image: "/tshirt.png",
     isPremium: false
+  },
+  {
+    id: 14,
+    name: "Luxury Velvet Tee",
+    category: "T-Shirts",
+    price: "₹1,999",
+    image: "/assets/product-extra-1.png",
+    isPremium: true
+  },
+  {
+    id: 15,
+    name: "Onyx Collection Shirt",
+    category: "Shirts",
+    price: "₹2,799",
+    image: "/assets/product-extra-2.png",
+    isPremium: true
+  },
+  {
+    id: 16,
+    name: "Sandstone Relaxed Fit",
+    category: "T-Shirts",
+    price: "₹1,399",
+    image: "/assets/product-extra-3.png",
+    isPremium: false
+  },
+  {
+    id: 17,
+    name: "Midnight Silk Blend",
+    category: "Premium",
+    price: "₹4,999",
+    image: "/assets/product-extra-4.png",
+    isPremium: true
+  },
+  {
+    id: 18,
+    name: "Ivory Minimalist Tee",
+    category: "T-Shirts",
+    price: "₹1,199",
+    image: "/assets/product-extra-5.png",
+    isPremium: false
   }
 ];
 

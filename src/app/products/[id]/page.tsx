@@ -127,8 +127,8 @@ const products = [
     name: "New Arrival 01",
     category: "New Arrivals",
     price: "₹689",
-    image: "/new_arrivals/arrival-1.jpeg",
-    details: ["/new_arrivals/arrival-1.jpeg", "/new_arrivals/arrival-1.jpeg"],
+    image: "/assets/arrival-1.jpg",
+    details: ["/assets/arrival-1.jpg", "/assets/arrival-1.jpg"],
     description: "Exclusive new arrival for the season. Features premium craftsmanship and modern silhouette."
   },
   {
@@ -136,8 +136,8 @@ const products = [
     name: "New Arrival 02",
     category: "New Arrivals",
     price: "₹689",
-    image: "/new_arrivals/arrival-2.jpeg",
-    details: ["/new_arrivals/arrival-2.jpeg", "/new_arrivals/arrival-2.jpeg"],
+    image: "/assets/arrival-2.jpg",
+    details: ["/assets/arrival-2.jpg", "/assets/arrival-2.jpg"],
     description: "Sophisticated style from our latest collection. Designed for versatility and comfort."
   },
   {
@@ -145,8 +145,8 @@ const products = [
     name: "New Arrival 03",
     category: "New Arrivals",
     price: "₹689",
-    image: "/new_arrivals/arrival-3.jpeg",
-    details: ["/new_arrivals/arrival-3.jpeg", "/new_arrivals/arrival-3.jpeg"],
+    image: "/assets/arrival-3.png",
+    details: ["/assets/arrival-3.png", "/assets/arrival-3.png"],
     description: "A fresh take on a classic favorite. Part of our exclusive new arrival drop."
   },
   {
@@ -154,9 +154,54 @@ const products = [
     name: "New Arrival 04",
     category: "New Arrivals",
     price: "₹689",
-    image: "/new_arrivals/arrival-4.jpeg",
-    details: ["/new_arrivals/arrival-4.jpeg", "/new_arrivals/arrival-4.jpeg"],
+    image: "/assets/arrival-4.png",
+    details: ["/assets/arrival-4.png", "/assets/arrival-4.png"],
     description: "Unmatched quality and distinctive design. The perfect addition to your modern wardrobe."
+  },
+  {
+    id: 14,
+    name: "Luxury Velvet Tee",
+    category: "T-Shirts",
+    price: "₹1,999",
+    image: "/assets/product-extra-1.png",
+    details: ["/assets/product-extra-1.png", "/assets/product-extra-1.png"],
+    description: "Indulge in pure luxury with our Velvet Tee. A soft, premium feel that elevates your casual look."
+  },
+  {
+    id: 15,
+    name: "Onyx Collection Shirt",
+    category: "Shirts",
+    price: "₹2,799",
+    image: "/assets/product-extra-2.png",
+    details: ["/assets/product-extra-2.png", "/assets/product-extra-2.png"],
+    description: "The Onyx Collection represents the darker side of luxury. Sharp, black, and undeniably sophisticated."
+  },
+  {
+    id: 16,
+    name: "Sandstone Relaxed Fit",
+    category: "T-Shirts",
+    price: "₹1,399",
+    image: "/assets/product-extra-3.png",
+    details: ["/assets/product-extra-3.png", "/assets/product-extra-3.png"],
+    description: "Earthy tones and a relaxed silhouette. Perfect for those who value both style and freedom of movement."
+  },
+  {
+    id: 17,
+    name: "Midnight Silk Blend",
+    category: "Premium",
+    price: "₹4,999",
+    image: "/assets/product-extra-4.png",
+    details: ["/assets/product-extra-4.png", "/assets/product-extra-4.png"],
+    description: "Our finest silk blend yet. The Midnight edition offers a deep, rich texture that shines in the night."
+  },
+  {
+    id: 18,
+    name: "Ivory Minimalist Tee",
+    category: "T-Shirts",
+    price: "₹1,199",
+    image: "/assets/product-extra-5.png",
+    details: ["/assets/product-extra-5.png", "/assets/product-extra-5.png"],
+    description: "Pure, simple, and essential. The Ivory Minimalist Tee is the bedrock of a sophisticated wardrobe."
   }
 ];
 
