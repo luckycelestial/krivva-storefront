@@ -61,8 +61,8 @@ export default function ShoppingBag() {
               flexDirection: 'column', 
               gap: '12px', 
               padding: '16px', 
-              background: 'white', 
-              border: '1px solid var(--border-light)', 
+              background: 'rgba(255,255,255,0.05)', 
+              border: '1px solid var(--gold-luxury)', 
               borderRadius: '16px',
               boxShadow: '0 4px 12px rgba(0,0,0,0.03)',
               position: 'relative',
@@ -96,26 +96,26 @@ export default function ShoppingBag() {
                 </div>
 
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '8px' }}>
-                  <span style={{ fontWeight: 700, color: 'black', fontSize: '15px' }}>{item.price}</span>
+                  <span style={{ fontWeight: 700, color: 'var(--gold-luxury)', fontSize: '15px' }}>{item.price}</span>
                   
                   {/* Quantity Controls */}
                   <div style={{ 
                     display: 'flex', 
                     alignItems: 'center', 
                     gap: '12px',
-                    border: '1px solid var(--border-light)',
+                    border: '1px solid var(--gold-luxury)',
                     borderRadius: '99px',
                     padding: '2px 8px',
-                    background: 'var(--ivory-white)'
+                    background: 'transparent'
                   }}>
                     <button 
                       onClick={() => updateQuantity(item.id, item.size, item.color, item.quantity - 1)}
-                      style={{ border: 'none', background: 'none', cursor: 'pointer', fontSize: '16px', fontWeight: 'bold' }}
+                      style={{ border: 'none', background: 'none', cursor: 'pointer', fontSize: '16px', fontWeight: 'bold', color: 'var(--gold-luxury)' }}
                     >−</button>
-                    <span style={{ fontSize: '12px', fontWeight: 600, minWidth: '16px', textAlign: 'center' }}>{item.quantity}</span>
+                    <span style={{ fontSize: '12px', fontWeight: 600, minWidth: '16px', textAlign: 'center', color: 'var(--ivory-white)' }}>{item.quantity}</span>
                     <button 
                       onClick={() => updateQuantity(item.id, item.size, item.color, item.quantity + 1)}
-                      style={{ border: 'none', background: 'none', cursor: 'pointer', fontSize: '16px', fontWeight: 'bold' }}
+                      style={{ border: 'none', background: 'none', cursor: 'pointer', fontSize: '16px', fontWeight: 'bold', color: 'var(--gold-luxury)' }}
                     >+</button>
                   </div>
                 </div>
@@ -130,26 +130,26 @@ export default function ShoppingBag() {
             position: isMobile ? 'static' : 'sticky', 
             top: '120px', 
             padding: isMobile ? '24px' : '40px', 
-            background: 'white', 
-            color: 'black', 
+            background: 'rgba(255,255,255,0.05)', 
+            color: 'var(--ivory-white)', 
             borderRadius: '24px', 
-            border: '2px solid black',
-            boxShadow: '0 20px 50px rgba(212,175,55,0.1)'
+            border: '2px solid var(--gold-luxury)',
+            boxShadow: '0 20px 50px rgba(61,11,28,0.2)'
           }}>
-            <h3 className="text-h3" style={{ color: 'black', marginBottom: '32px', letterSpacing: '0.05em' }}>Order Summary</h3>
+            <h3 className="text-h3" style={{ color: 'var(--gold-luxury)', marginBottom: '32px', letterSpacing: '0.05em' }}>Order Summary</h3>
             
             <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', marginBottom: '40px' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                <span style={{ color: '#666666', fontSize: '14px' }}>Subtotal</span>
-                <span style={{ fontWeight: 500, color: 'black' }}>₹{subtotal.toLocaleString()}</span>
+                <span style={{ color: 'var(--on-surface-variant)', fontSize: '14px' }}>Subtotal</span>
+                <span style={{ fontWeight: 500, color: 'var(--ivory-white)' }}>₹{subtotal.toLocaleString()}</span>
               </div>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                <span style={{ color: '#666666', fontSize: '14px' }}>Shipping</span>
+                <span style={{ color: 'var(--on-surface-variant)', fontSize: '14px' }}>Shipping</span>
                 <span style={{ color: '#22c55e', textTransform: 'uppercase', letterSpacing: '0.1em', fontSize: '11px', fontWeight: 700 }}>Complimentary</span>
               </div>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                <span style={{ color: '#666666', fontSize: '14px' }}>GST (12%)</span>
-                <span style={{ fontWeight: 500, color: 'black' }}>₹{gst.toLocaleString()}</span>
+                <span style={{ color: 'var(--on-surface-variant)', fontSize: '14px' }}>GST (12%)</span>
+                <span style={{ fontWeight: 500, color: 'var(--ivory-white)' }}>₹{gst.toLocaleString()}</span>
               </div>
               
               <div style={{ 
@@ -160,10 +160,10 @@ export default function ShoppingBag() {
                 justifyContent: 'space-between', 
                 alignItems: 'baseline' 
               }}>
-                <span style={{ fontSize: '18px', fontWeight: 600, color: 'black' }}>Total</span>
+                <span style={{ fontSize: '18px', fontWeight: 600, color: 'var(--ivory-white)' }}>Total</span>
                 <div style={{ textAlign: 'right' }}>
-                  <span style={{ fontSize: '32px', fontWeight: 700, color: 'black' }}>₹{total.toLocaleString()}</span>
-                  <p style={{ fontSize: '10px', color: '#999999', margin: 0, textTransform: 'uppercase', letterSpacing: '0.1em' }}>All taxes included</p>
+                  <span style={{ fontSize: '32px', fontWeight: 700, color: 'var(--ivory-white)' }}>₹{total.toLocaleString()}</span>
+                  <p style={{ fontSize: '10px', color: 'var(--on-surface-variant)', margin: 0, textTransform: 'uppercase', letterSpacing: '0.1em' }}>All taxes included</p>
                 </div>
               </div>
             </div>
@@ -191,7 +191,7 @@ export default function ShoppingBag() {
             </div>
           </div>
           
-          <div style={{ marginTop: '32px', padding: '24px', borderRadius: '16px', background: 'var(--surface-container-low)', border: '1px solid var(--border-light)' }}>
+          <div style={{ marginTop: '32px', padding: '24px', borderRadius: '16px', background: 'rgba(255,255,255,0.05)', border: '1px solid var(--gold-luxury)' }}>
             <h4 style={{ fontSize: '14px', fontWeight: 700, marginBottom: '12px' }}>Wholesale Inquiries</h4>
             <p style={{ fontSize: '12px', color: 'var(--on-surface-variant)', lineHeight: 1.5, marginBottom: '16px' }}>
               Ordering for a team or retail store? Our wholesale partners receive exclusive heritage pricing and custom tailoring services.

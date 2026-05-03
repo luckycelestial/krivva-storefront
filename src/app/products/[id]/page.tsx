@@ -249,7 +249,8 @@ export default function ProductDetail({ params }: { params: Promise<{ id: string
                     background: 'none',
                     border: 'none',
                     cursor: 'pointer',
-                    fontSize: '20px'
+                    fontSize: '20px',
+                    color: 'var(--gold-luxury)'
                   }}
                 >−</button>
                 <span style={{ minWidth: '24px', textAlign: 'center', fontWeight: 600 }}>{quantity}</span>
@@ -264,7 +265,8 @@ export default function ProductDetail({ params }: { params: Promise<{ id: string
                     background: 'none',
                     border: 'none',
                     cursor: 'pointer',
-                    fontSize: '20px'
+                    fontSize: '20px',
+                    color: 'var(--gold-luxury)'
                   }}
                 >+</button>
               </div>
