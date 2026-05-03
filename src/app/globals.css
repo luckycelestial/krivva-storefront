@@ -385,7 +385,6 @@ input {
   display: flex;
   width: max-content;
   animation: marquee 30s linear infinite;
-  gap: 20px;
 }
 
 .marquee-container:hover {

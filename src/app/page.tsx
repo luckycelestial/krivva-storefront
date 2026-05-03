@@ -118,7 +118,7 @@ export default function Home() {
       <section style={{ background: 'transparent', padding: '60px 0', overflow: 'hidden' }}>
         <div className="marquee-container">
           {[...Array(3)].map((_, i) => (
-            <div key={i} style={{ display: 'flex', gap: '20px' }}>
+            <div key={i} style={{ display: 'flex', gap: '20px', paddingRight: '20px' }}>
               {[
                 { icon: "workspace_premium", title: "Premium T-Shirts", desc: "Long lasting craftsmanship" },
                 { icon: "eco", title: "Pure Cotton", desc: "Sourced from Tiruppur" },
@@ -138,13 +138,13 @@ export default function Home() {
                   <div style={{ 
                     width: '56px', 
                     height: '56px', 
-                    background: 'var(--surface-container-low)', 
+                    background: 'var(--gold-luxury)', 
                     borderRadius: '16px', 
                     display: 'flex', 
                     alignItems: 'center', 
                     justifyContent: 'center',
                     margin: '0 auto 16px',
-                    color: 'var(--brand-gold)'
+                    color: 'var(--action-blue)'
                   }}>
                     <span className="material-symbols-outlined" style={{ fontSize: '32px' }}>{value.icon}</span>
                   </div>
