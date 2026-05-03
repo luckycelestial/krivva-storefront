@@ -130,7 +130,7 @@ export default function Home() {
           {[...Array(2)].map((_, i) => (
             <div key={i} className="marquee-content">
               {[
-                { icon: "workspace_premium", title: "Premium T-Shirts", desc: "Long lasting craftsmanship" },
+                { icon: "workspace_premium", title: "Premium Salwars", desc: "Long lasting craftsmanship" },
                 { icon: "eco", title: "Pure Cotton", desc: "Sourced from Tiruppur" },
                 { icon: "local_shipping", title: "Pan-India Delivery", desc: "Fast & Secure shipping" },
                 { icon: "history", title: "Heritage Fits", desc: "Classic Indian silhouettes" },
