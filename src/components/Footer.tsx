@@ -57,12 +57,16 @@ export default function Footer() {
           }}>
             Krivva by rethika
           </h3>
-          <p style={{ fontSize: '14px', lineHeight: '1.6', opacity: 0.8 }}>
-            Our mission is to create premium clothing that blends modern elegance with everyday comfort. We design thoughtful styles that are easy to wear, beautifully crafted, and accessible.
+          <p style={{ fontSize: '14px', lineHeight: '1.6', opacity: 0.8, textTransform: 'uppercase' }}>
+            <strong>KRIVVA</strong> A BRAND THAT EMBODIES THE REGAL ESSENCE OF INDIAN HERITAGE, METICULOUSLY CRAFTED FOR THE MODERN CONNOISSEUR. WITH UNWAVERING DEDICATION AND COUNTLESS HOURS OF HARD WORK, WE HAVE CREATED A COLLECTION THAT MARRIES THE GRANDEUR OF TRADITION WITH THE REFINEMENT OF CONTEMPORARY DESIGN.
           </p>
           <div style={{ display: 'flex', gap: '16px', marginTop: '24px' }}>
-            <a href="#" style={{ color: 'var(--gold-luxury)', textDecoration: 'none' }}>
-              <span className="material-symbols-outlined">photo_camera</span>
+            <a href="https://www.instagram.com/krivvabyrethika?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--gold-luxury)', textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
             </a>
             <a href="#" style={{ color: 'var(--gold-luxury)', textDecoration: 'none' }}>
               <span className="material-symbols-outlined">mail</span>
