@@ -25,16 +25,26 @@ export default function Home() {
         background: 'transparent',
         position: 'relative'
       }}>
-        <div style={{ width: '100%', position: 'relative', aspectRatio: '16/9' }}>
-          <Image 
-            src="/assets/Krivva_logo.jpg" 
-            alt="Krivva Logo" 
-            fill
-            priority
+        <div style={{ 
+          width: '100%', 
+          maxWidth: '500px',
+          margin: '0 auto 24px',
+          position: 'relative', 
+          aspectRatio: '368/358',
+          border: '2px solid var(--gold-luxury)',
+          borderRadius: '12px',
+          overflow: 'hidden'
+        }}>
+          <video 
+            src="/assets/logo-animation.mp4" 
+            autoPlay 
+            muted 
+            loop 
+            playsInline
             style={{ 
-              objectFit: 'cover',
-              border: '2px solid var(--gold-luxury)',
-              borderRadius: '12px'
+              width: '100%', 
+              height: '100%',
+              objectFit: 'cover'
             }} 
           />
         </div>
