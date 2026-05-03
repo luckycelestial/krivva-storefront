@@ -76,30 +76,6 @@ const products = [
     price: "₹1,299",
     image: "/assets/product-extra-5.png",
     isPremium: false
-  },
-  {
-    id: 10,
-    name: "Product 10",
-    category: "Category 5",
-    price: "₹5,299",
-    image: "/assets/shirt.png",
-    isPremium: true
-  },
-  {
-    id: 11,
-    name: "Product 11",
-    category: "Category 1",
-    price: "₹1,599",
-    image: "/assets/tshirt.png",
-    isPremium: false
-  },
-  {
-    id: 12,
-    name: "Product 12",
-    category: "Category 4",
-    price: "₹3,499",
-    image: "/assets/pants.png",
-    isPremium: false
   }
 ];
 

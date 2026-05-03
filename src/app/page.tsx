@@ -25,16 +25,23 @@ export default function Home() {
         background: 'transparent',
         position: 'relative'
       }}>
-        <div style={{ width: '100%', position: 'relative', aspectRatio: '16/9' }}>
+        <div style={{ 
+          width: '100%', 
+          position: 'relative', 
+          aspectRatio: isMobile ? '1/1' : '21/9',
+          background: 'var(--action-blue)',
+          borderRadius: '12px',
+          overflow: 'hidden',
+          border: '2px solid var(--gold-luxury)'
+        }}>
           <Image 
             src="/assets/Krivva_logo.jpg" 
             alt="Krivva Logo" 
             fill
             priority
             style={{ 
-              objectFit: 'cover',
-              border: '2px solid var(--gold-luxury)',
-              borderRadius: '12px'
+              objectFit: 'contain',
+              padding: '20px'
             }} 
           />
         </div>

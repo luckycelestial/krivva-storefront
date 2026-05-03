@@ -85,33 +85,6 @@ const products = [
     image: "/assets/product-extra-5.png",
     details: ["/assets/product-extra-5.png", "/assets/product-extra-5.png"],
     description: "Functional design meets street aesthetic. The Urban Utility Tee features reinforced stitching and a slightly heavier weight fabric for everyday durability."
-  },
-  {
-    id: 10,
-    name: "Product 10",
-    category: "Category 5",
-    price: "₹5,299",
-    image: "/assets/shirt.png",
-    details: ["/assets/shirt.png", "/assets/shirt.png"],
-    description: "A blend of fine cotton and pure mulberry silk. This shirt offers a subtle sheen and a liquid-like drape that feels incredible against the skin."
-  },
-  {
-    id: 11,
-    name: "Product 11",
-    category: "Category 1",
-    price: "₹1,599",
-    image: "/assets/tshirt.png",
-    details: ["/assets/tshirt.png", "/assets/tshirt.png"],
-    description: "Each piece tells a story. This tee is hand-finished by master artisans, ensuring a unique character and exceptional attention to detail."
-  },
-  {
-    id: 12,
-    name: "Product 12",
-    category: "Category 4",
-    price: "₹3,499",
-    image: "/assets/pants.png",
-    details: ["/assets/pants.png", "/assets/pants.png"],
-    description: "A crisp, versatile white shirt that transitions seamlessly from office to evening. Made from high-grade cotton poplin."
   }
 ];
 
@@ -192,6 +165,7 @@ export default function ProductDetail({ params }: { params: Promise<{ id: string
           overflow: 'hidden'
         }}>
           <div style={{ 
+            position: 'relative',
             aspectRatio: '3/4', 
             overflow: 'hidden', 
             borderRadius: '12px', 

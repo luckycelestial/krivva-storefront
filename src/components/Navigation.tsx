@@ -45,10 +45,11 @@ export default function Navigation() {
         height: '72px'
       }}>
         <Link href="/" className="logo" style={{ 
-          fontSize: '24px', 
-          letterSpacing: '0.2em', 
           color: 'var(--gold-luxury)', 
-          fontWeight: '700' 
+          fontWeight: '700',
+          maxWidth: '80%',
+          textAlign: 'center',
+          transition: 'all 0.3s ease'
         }}>
           Krivva by rethika
         </Link>
