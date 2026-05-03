@@ -52,7 +52,7 @@ export default function ProfilePage() {
           gap: '12px'
         }}>
           {/* Row 1: Name */}
-          <h1 className="text-h3" style={{ fontSize: isMobile ? '20px' : '32px', margin: 0 }}>Chakravarthy</h1>
+          <h1 className="text-h3" style={{ fontSize: isMobile ? '20px' : '32px', margin: 0 }}>Rethika</h1>
           
           {/* Row 2: Stats/Icons */}
           <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
@@ -78,12 +78,12 @@ export default function ProfilePage() {
 
       {/* Measurement Box Section */}
       <section style={{ marginBottom: '64px' }}>
-        <h2 className="text-h4" style={{ marginBottom: '16px', color: 'var(--slate-gray)' }}>My Measurements</h2>
+        <h2 className="text-h4" style={{ marginBottom: '16px', color: 'var(--ivory-white)' }}>My Measurements</h2>
         <div style={{ 
-          background: 'var(--off-white)', 
+          background: 'rgba(255,255,255,0.05)', 
           borderRadius: '16px', 
           padding: '24px', 
-          border: '1px solid var(--border-light)',
+          border: '1px solid var(--gold-luxury)',
           position: 'relative'
         }}>
           <button style={{ position: 'absolute', top: '16px', right: '16px', background: 'none', border: 'none', cursor: 'pointer', color: 'var(--brand-gold)' }}>
@@ -106,18 +106,18 @@ export default function ProfilePage() {
             
             {/* Calculated Size Box */}
             <div style={{ 
-              background: 'var(--charcoal-black)', 
-              color: 'white', 
+              background: 'transparent', 
+              color: 'var(--ivory-white)', 
               padding: '16px', 
               borderRadius: '12px',
               textAlign: 'center',
               display: 'flex',
               flexDirection: 'column',
               justifyContent: 'center',
-              border: '1px solid var(--brand-gold)'
+              border: '2px solid var(--gold-luxury)'
             }}>
               <p style={{ fontSize: '9px', textTransform: 'uppercase', color: 'var(--brand-gold)', marginBottom: '4px' }}>Recommended Size</p>
-              <p className="text-h2" style={{ color: 'white', fontSize: '28px' }}>M</p>
+              <p className="text-h2" style={{ color: 'var(--gold-luxury)', fontSize: '28px' }}>M</p>
               <p style={{ fontSize: '9px', opacity: 0.6 }}>Based on Tiruppur Scale</p>
             </div>
           </div>
@@ -136,8 +136,8 @@ export default function ProfilePage() {
             { id: 'KR-22812', status: 'Fulfilled', items: 'Classic Black T-Shirt, Navy Blue T-Shirt', date: 'Jan 28, 2024', total: '₹2,598' }
           ].map((order, i) => (
             <div key={i} style={{ 
-              background: 'white', 
-              border: '1px solid var(--border-light)', 
+              background: 'transparent', 
+              border: '1px solid var(--gold-luxury)', 
               borderRadius: '16px', 
               padding: isMobile ? '16px' : '24px',
               display: 'flex',
@@ -170,8 +170,8 @@ export default function ProfilePage() {
                 </div>
               </div>
               <button style={{ 
-                border: '1px solid var(--action-blue)', 
-                color: 'var(--action-blue)', 
+                border: '1px solid var(--gold-luxury)', 
+                color: 'var(--gold-luxury)', 
                 background: 'transparent', 
                 padding: '8px 20px', 
                 borderRadius: '4px', 
