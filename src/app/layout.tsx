@@ -23,6 +23,9 @@ export const metadata: Metadata = {
     locale: "en_IN",
     type: "website",
   },
+  icons: {
+    icon: "/assets/Krivva_logo.jpg",
+  },
 };
 
 import { CartProvider } from "@/context/CartContext";
