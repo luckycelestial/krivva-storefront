@@ -3,7 +3,7 @@ import "./globals.css";
 import Navigation from "@/components/Navigation";
 
 export const metadata: Metadata = {
-  title: "CHAK CLOTHINGS | Luxe Minimalism",
+  title: "Krivva by rethika | Luxe Minimalism",
   description: "Long lasting Clothings crafted in Tiruppur",
 };
 

@@ -50,7 +50,7 @@ export default function Navigation() {
           color: 'black', 
           fontWeight: '700' 
         }}>
-          CHAK CLOTHINGS
+          Krivva by rethika
         </Link>
       </header>
 

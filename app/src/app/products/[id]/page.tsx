@@ -57,7 +57,7 @@ const products = [
     price: "₹4,499",
     image: "/products/product-6.jpeg",
     details: ["/products/product-6.jpeg", "/products/product-6.jpeg"],
-    description: "Our Signature Gold Edition shirt represents the pinnacle of CHAK craftsmanship. Featuring subtle gold-thread detailing and a luxurious hand-feel."
+  description: "Our Signature Gold Edition shirt represents the pinnacle of Krivva craftsmanship. Featuring subtle gold-thread detailing and a luxurious hand-feel."
   },
   {
     id: 7,

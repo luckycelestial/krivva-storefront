@@ -27,7 +27,7 @@ export default function Home() {
         <div style={{ width: '100%' }}>
           <img 
             src="/Chak_logo.jpg" 
-            alt="CHAK Logo" 
+            alt="Krivva Logo" 
             style={{ 
               width: '100%', 
               height: 'auto', 
@@ -162,7 +162,7 @@ export default function Home() {
           }}>
             <h2 className="text-h2" style={{ marginBottom: '20px', fontSize: isMobile ? '24px' : '32px' }}>Wholesale Partnership</h2>
             <p className="text-body-reg" style={{ color: 'var(--slate-gray)', marginBottom: '32px', lineHeight: '1.6' }}>
-              Partner with CHAK to bring premium Tiruppur craftsmanship to your retail space. 
+              Partner with Krivva by rethika to bring premium Tiruppur craftsmanship to your retail space. 
               We offer exclusive wholesale pricing and custom production services for bulk orders.
             </p>
             <div style={{ display: 'flex', justifyContent: 'center' }}>
