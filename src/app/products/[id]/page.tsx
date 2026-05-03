@@ -88,21 +88,6 @@ const products = [
   }
 ];
 
-const COLORS = [
-  { name: 'Charcoal Black', hex: '#1A1A1A' },
-  { name: 'Ivory White', hex: '#F8F7F4' },
-  { name: 'Royal Blue', hex: '#1E3A8A' },
-  { name: 'Deep Maroon', hex: '#800000' },
-  { name: 'Forest Green', hex: '#228B22' },
-  { name: 'Mustard Yellow', hex: '#FFDB58' },
-  { name: 'Terracotta', hex: '#E2725B' },
-  { name: 'Slate Grey', hex: '#708090' },
-  { name: 'Olive Green', hex: '#556B2F' },
-  { name: 'Midnight Navy', hex: '#191970' },
-  { name: 'Sandstone', hex: '#C2B280' },
-  { name: 'Rust Orange', hex: '#B7410E' }
-];
-
 const SIZES = ['XS', 'S', 'M', 'L', 'XL', 'XXL'];
 
 import Image from "next/image";
@@ -118,7 +103,6 @@ export default function ProductDetail({ params }: { params: Promise<{ id: string
 
   const [isMobile, setIsMobile] = useState(false);
   const [selectedSize, setSelectedSize] = useState('M');
-  const [selectedColor, setSelectedColor] = useState(COLORS[0]);
   const [quantity, setQuantity] = useState(1);
   const { addToCart, showToast } = useCart();
 
@@ -141,7 +125,7 @@ export default function ProductDetail({ params }: { params: Promise<{ id: string
       image: product.image,
       quantity: quantity,
       size: selectedSize,
-      color: selectedColor.name
+      color: "Default"
     });
     showToast(`${product.name} Added!`);
   };
@@ -208,54 +192,19 @@ export default function ProductDetail({ params }: { params: Promise<{ id: string
             <span className="text-caption" style={{ color: 'var(--warm-bronze)', textTransform: 'uppercase', letterSpacing: '0.2em', fontWeight: 600 }}>{product.category}</span>
             <h1 className="text-h1" style={{ fontSize: isMobile ? '28px' : '40px' }}>{product.name}</h1>
             <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-              <p className="text-h3" style={{ color: 'var(--action-blue)' }}>{product.price}</p>
-              <span style={{ background: 'var(--surface-container-high)', padding: '4px 12px', borderRadius: '99px', fontSize: '10px', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.1em' }}>In Stock</span>
+              <p className="text-h3" style={{ color: 'var(--gold-luxury)' }}>{product.price}</p>
+              <span style={{ background: 'var(--gold-luxury)', color: 'var(--action-blue)', padding: '4px 12px', borderRadius: '99px', fontSize: '10px', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.1em' }}>In Stock</span>
             </div>
           </div>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '32px' }}>
-            {/* Color Selection */}
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-              <span className="text-label" style={{ fontWeight: 600 }}>Color: <span style={{ fontWeight: 400, color: 'var(--on-surface-variant)' }}>{selectedColor.name}</span></span>
-              <div style={{ display: 'grid', gridTemplateColumns: isMobile ? 'repeat(5, 1fr)' : 'repeat(6, 1fr)', gap: isMobile ? '10px' : '12px', width: '100%', overflow: 'visible' }}>
-                {COLORS.map(color => (
-                  <div
-                    key={color.name}
-                    style={{
-                      width: '100%',
-                      aspectRatio: '1',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      borderRadius: '50%'
-                    }}
-                  >
-                    <button 
-                      onClick={() => setSelectedColor(color)}
-                      style={{ 
-                        width: '100%',
-                        height: '100%',
-                        borderRadius: '50%',
-                        background: color.hex,
-                        border: selectedColor.name === color.name ? '3px solid var(--action-blue)' : '1px solid rgba(0,0,0,0.1)',
-                        padding: '0',
-                        cursor: 'pointer',
-                        transition: 'transform 0.2s',
-                        transform: selectedColor.name === color.name ? 'scale(1.1)' : 'scale(1)',
-                        boxSizing: 'border-box'
-                      }}
-                      title={color.name}
-                    />
-                  </div>
-                ))}
-              </div>
-            </div>
+
 
             {/* Size Selection */}
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 <span className="text-label" style={{ fontWeight: 600 }}>Select Size</span>
-                <Link href="#" className="text-caption" style={{ color: 'var(--action-blue)', textDecoration: 'underline' }}>Size Guide</Link>
+                <Link href="#" className="text-caption" style={{ color: 'var(--gold-luxury)', textDecoration: 'underline' }}>Size Guide</Link>
               </div>
               <div style={{ display: 'grid', gridTemplateColumns: isMobile ? 'repeat(4, 1fr)' : 'repeat(6, 1fr)', gap: isMobile ? '10px' : '12px', width: '100%', overflow: 'hidden' }}>
                 {SIZES.map(size => (
@@ -264,10 +213,10 @@ export default function ProductDetail({ params }: { params: Promise<{ id: string
                     onClick={() => setSelectedSize(size)}
                     style={{ 
                       padding: '12px 0', 
-                      border: size === selectedSize ? '2px solid var(--action-blue)' : '1px solid var(--border-light)', 
+                      border: size === selectedSize ? '2px solid var(--gold-luxury)' : '1px solid var(--border-light)', 
                       borderRadius: '8px', 
-                      background: size === selectedSize ? 'var(--action-blue)' : 'transparent',
-                      color: size === selectedSize ? 'white' : 'var(--on-surface-variant)',
+                      background: size === selectedSize ? 'var(--gold-luxury)' : 'transparent',
+                      color: size === selectedSize ? 'var(--action-blue)' : 'var(--ivory-white)',
                       fontWeight: 600,
                       cursor: 'pointer',
                       fontSize: '14px'

@@ -155,7 +155,7 @@ export default function ProductsPage() {
                   <div style={{ position: 'absolute', top: '10px', left: '10px' }}>
                     <span style={{ 
                       background: 'var(--gold-luxury)', 
-                      color: 'var(--charcoal-black)', 
+                      color: 'var(--action-blue)', 
                       fontSize: '8px', 
                       fontWeight: 800, 
                       padding: '3px 8px', 
@@ -167,9 +167,9 @@ export default function ProductsPage() {
                 )}
               </div>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
-                <p className="text-caption" style={{ color: 'var(--medium-grey)', textTransform: 'uppercase', letterSpacing: '0.1em', fontSize: '10px', fontWeight: 600 }}>{product.category}</p>
+                <p className="text-caption" style={{ color: 'var(--gold-luxury)', textTransform: 'uppercase', letterSpacing: '0.1em', fontSize: '10px', fontWeight: 600 }}>{product.category}</p>
                 <h3 className="text-body-reg" style={{ fontWeight: 600, fontSize: isMobile ? '13px' : '16px', lineHeight: 1.2 }}>{product.name}</h3>
-                <p className="text-body-reg" style={{ color: 'var(--charcoal-black)', fontWeight: 700, fontSize: isMobile ? '13px' : '16px', marginTop: '4px' }}>{product.price}</p>
+                <p className="text-body-reg" style={{ color: 'var(--ivory-white)', fontWeight: 700, fontSize: isMobile ? '13px' : '16px', marginTop: '4px' }}>{product.price}</p>
               </div>
             </div>
           </Link>

@@ -196,7 +196,7 @@ export default function ShoppingBag() {
             <p style={{ fontSize: '12px', color: 'var(--on-surface-variant)', lineHeight: 1.5, marginBottom: '16px' }}>
               Ordering for a team or retail store? Our wholesale partners receive exclusive heritage pricing and custom tailoring services.
             </p>
-            <a href="https://wa.me/918825481550" target="_blank" style={{ color: 'var(--action-blue)', fontWeight: 600, fontSize: '12px', textDecoration: 'none' }}>Contact Wholesale Team →</a>
+            <a href="https://wa.me/918825481550" target="_blank" style={{ color: 'var(--gold-luxury)', fontWeight: 600, fontSize: '12px', textDecoration: 'none' }}>Contact Wholesale Team →</a>
           </div>
         </div>
       </div>

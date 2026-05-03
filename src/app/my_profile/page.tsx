@@ -34,7 +34,7 @@ export default function ProfilePage() {
             height: isMobile ? '80px' : '160px', 
             borderRadius: '50%', 
             padding: '2px', 
-            border: '2px solid var(--brand-gold)', 
+            border: '2px solid var(--gold-luxury)', 
             overflow: 'hidden'
           }}>
             <div style={{ position: 'relative', width: '100%', height: '100%' }}>
@@ -62,11 +62,11 @@ export default function ProfilePage() {
           {/* Row 2: Stats/Icons */}
           <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
-              <span className="material-symbols-outlined" style={{ fontSize: '18px', color: 'var(--brand-gold)' }}>package_2</span>
+              <span className="material-symbols-outlined" style={{ fontSize: '18px', color: 'var(--gold-luxury)' }}>package_2</span>
               <span className="text-body-sm" style={{ fontWeight: 600 }}>12 Orders</span>
             </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
-              <span className="material-symbols-outlined" style={{ fontSize: '18px', color: 'var(--brand-gold)' }}>straighten</span>
+              <span className="material-symbols-outlined" style={{ fontSize: '18px', color: 'var(--gold-luxury)' }}>straighten</span>
               <span className="text-body-sm" style={{ fontWeight: 600 }}>Size: M</span>
             </div>
           </div>
@@ -91,7 +91,7 @@ export default function ProfilePage() {
           border: '1px solid var(--gold-luxury)',
           position: 'relative'
         }}>
-          <button style={{ position: 'absolute', top: '16px', right: '16px', background: 'none', border: 'none', cursor: 'pointer', color: 'var(--brand-gold)' }}>
+          <button style={{ position: 'absolute', top: '16px', right: '16px', background: 'none', border: 'none', cursor: 'pointer', color: 'var(--gold-luxury)' }}>
             <span className="material-symbols-outlined">edit</span>
           </button>
           
@@ -121,7 +121,7 @@ export default function ProfilePage() {
               justifyContent: 'center',
               border: '2px solid var(--gold-luxury)'
             }}>
-              <p style={{ fontSize: '9px', textTransform: 'uppercase', color: 'var(--brand-gold)', marginBottom: '4px' }}>Recommended Size</p>
+              <p style={{ fontSize: '9px', textTransform: 'uppercase', color: 'var(--gold-luxury)', marginBottom: '4px' }}>Recommended Size</p>
               <p className="text-h2" style={{ color: 'var(--gold-luxury)', fontSize: '28px' }}>M</p>
               <p style={{ fontSize: '9px', opacity: 0.6 }}>Based on Tiruppur Scale</p>
             </div>
