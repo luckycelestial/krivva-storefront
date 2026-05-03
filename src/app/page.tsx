@@ -27,21 +27,24 @@ export default function Home() {
       }}>
         <div style={{ 
           width: '100%', 
+          maxWidth: '500px',
+          margin: '0 auto 24px',
           position: 'relative', 
-          aspectRatio: isMobile ? '1/1' : '21/9',
-          background: 'var(--action-blue)',
+          aspectRatio: '368/358',
+          border: '2px solid var(--gold-luxury)',
           borderRadius: '12px',
-          overflow: 'hidden',
-          border: '2px solid var(--gold-luxury)'
+          overflow: 'hidden'
         }}>
-          <Image 
-            src="/assets/Krivva_logo.jpg" 
-            alt="Krivva Logo" 
-            fill
-            priority
+          <video 
+            src="/assets/logo-animation.mp4" 
+            autoPlay 
+            muted 
+            loop 
+            playsInline
             style={{ 
-              objectFit: 'contain',
-              padding: '20px'
+              width: '100%', 
+              height: '100%',
+              objectFit: 'cover'
             }} 
           />
         </div>
@@ -123,9 +126,9 @@ export default function Home() {
 
       {/* Value Propositions - Auto Scrolling Marquee */}
       <section style={{ background: 'transparent', padding: '60px 0', overflow: 'hidden' }} className="no-scrollbar">
-        <div className="marquee-container no-scrollbar">
-          {[...Array(3)].map((_, i) => (
-            <div key={i} style={{ display: 'flex', gap: '20px' }}>
+        <div className="marquee-wrapper">
+          {[...Array(2)].map((_, i) => (
+            <div key={i} className="marquee-content">
               {[
                 { icon: "workspace_premium", title: "Premium T-Shirts", desc: "Long lasting craftsmanship" },
                 { icon: "eco", title: "Pure Cotton", desc: "Sourced from Tiruppur" },
@@ -145,14 +148,13 @@ export default function Home() {
                   <div style={{ 
                     width: '56px', 
                     height: '56px', 
-                    background: 'rgba(255, 255, 255, 0.1)', 
+                    background: 'var(--gold-luxury)', 
                     borderRadius: '16px', 
                     display: 'flex', 
                     alignItems: 'center', 
                     justifyContent: 'center',
                     margin: '0 auto 16px',
-                    color: 'var(--gold-luxury)',
-                    border: '1px solid var(--gold-luxury)'
+                    color: 'var(--action-blue)'
                   }}>
                     <span className="material-symbols-outlined" style={{ fontSize: '32px' }}>{value.icon}</span>
                   </div>
