@@ -26,7 +26,7 @@ export default function Home() {
       }}>
         <div style={{ width: '100%' }}>
           <img 
-            src="/Chak_logo.jpg" 
+            src="/Krivva_logo.jpg" 
             alt="Krivva Logo" 
             style={{ 
               width: '100%', 
