@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Krivva by rethika | Luxe Minimalism",
@@ -24,9 +25,10 @@ export default function RootLayout({
       <body className="antialiased">
         <CartProvider>
           <Navigation />
-          <main style={{ paddingBottom: '100px' }}>
+          <main style={{ minHeight: 'calc(100vh - 72px)' }}>
             {children}
           </main>
+          <Footer />
         </CartProvider>
       </body>
     </html>
