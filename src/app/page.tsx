@@ -170,7 +170,7 @@ export default function Home() {
             </p>
             <div style={{ display: 'flex', justifyContent: 'center' }}>
               <a 
-                href="https://wa.me/919944400399" 
+                href="https://wa.me/919944400399?text=Hey%2C%20I%20want%20to%20enquire%20about%20your%20wholesale%20deals" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 style={{ textDecoration: 'none' }}
